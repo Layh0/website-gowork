@@ -1,0 +1,204 @@
+
+html, body {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-color: #050505;
+}
+
+body {
+  position: relative;
+  color: #ffffff;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ПЕРВАЯ СЕКЦИЯ */
+
+#center {
+  position: relative;
+  z-index: 1;
+  
+  background-image: url('https://smapse.ru/storage/2025/08/smapse-samye-vysokie-zdania-mira-neboskreby-ot-kotoryh-zahvatyvaet-duh-00.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  min-height: 100vh;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+}
+
+#center::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+  pointer-events: none;
+}
+
+
+/* ВТОРАЯ СЕКЦИЯ */
+#features {
+  position: relative;
+  z-index: 1;
+  
+  background-image: url('https://avatars.mds.yandex.net/i?id=282a9d3b56997d793c0c5423fe5aba9d_l-9140040-images-thumbs&n=13');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  padding: 120px 20px; 
+  width: 100%;
+}
+
+#features::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(5, 5, 10, 0.85);
+  z-index: -1;
+  pointer-events: none;
+}
+
+
+/* 5. ТРЕТЬЯ СЕКЦИЯ */
+
+#cta {
+  position: relative;
+  z-index: 1;
+  
+  background-image: url('https://img.magnific.com/premium-psd/abstract-background-psd-dark-abstract-wallpaper-black-banner-background_691560-10674.jpg?semt=ais_hybrid&w=740&q=80');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  min-height: 100vh;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+}
+
+#cta p {
+  font-size: clamp(1.2rem, 3vw, 1.8rem);
+  color: #cbd5e1;
+  margin-bottom: 50px;
+  max-width: 100%;
+}
+/* ТИПОГРАФИКА И ОБЩИЕ ЭЛЕМЕНТЫ */
+
+h1 {
+  font-weight: 900;
+  margin: 0;
+  line-height: 1;
+  
+  font-size: clamp(3rem, 7vw, 6 rem); 
+  
+  background: linear-gradient(135deg, #fff 0%, #a5b4fc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+p {
+  font-size: clamp(1.5rem, 4vw, 2.2rem);
+  color: #9ca3af;
+  max-width: 800px;
+  line-height: 1.4;
+  margin-top: 40px;
+  font-weight: 500;
+}
+
+.btn {
+  margin-top: 60px;
+  padding: 24px 60px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  border-radius: 16px;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #d946ef 100%);
+  color: #ffffff;
+  box-shadow: 0 0 30px rgba(139, 92, 246, 0.5);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.btn:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 0 50px rgba(139, 92, 246, 0.8), 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+.btn:active {
+  transform: translateY(2px) scale(0.98);
+  box-shadow: 0 0 20px rgba(139, 92, 246, 0.4);
+}
+
+.counter:focus-visible {
+  outline: 3px solid #a5b4fc;
+  outline-offset: 4px;
+}
+
+#features h2 {
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  text-align: center;
+  margin-bottom: 80px;
+  color: #ffffff;
+  font-weight: 800;
+  position: relative;
+  z-index: 1;
+}
+
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Карточки стали шире */
+  gap: 40px;
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 24px;
+  padding: 50px 40px;
+  transition: transform 0.3s ease, background 0.3s ease, border-color 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(139, 92, 246, 0.4);
+}
+
+.card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #a5b4fc;
+}
+
+.card p {
+  font-size: 1.2rem;
+  color: #cbd5e1;
+  margin-top: 0;
+  line-height: 1.6;
+  max-width: 100%;
+}
