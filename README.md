@@ -1,16 +1,33 @@
-# React + Vite
+# TRADERS — Твой первый миллион
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Современный, адаптивный лендинг для привлечения партнеров в сервис доставки. Создан с использованием **React** и **Vite** для максимальной производительности и плавного UX.
 
-Currently, two official plugins are available:
+![Preview](https://img.shields.io/badge/Status-Live-brightgreen) ![React](https://img.shields.io/badge/React-18.x-blue) ![Vite](https://img.shields.io/badge/Vite-5.x-purple)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Особенности проекта
 
-## React Compiler
+*   **Современный дизайн:** Темная тема, градиентные тексты и эффект "матового стекла" (Glassmorphism).
+*   **Плавные анимации:** Интерактивные кнопки с неоновым свечением и hover-эффекты.
+*   **Полная адаптивность:** Корректное отображение на мобильных, планшетах и десктопах благодаря CSS Grid и Flexbox.
+*   **Параллакс-фоны:** Уникальные фоновые изображения для каждой секции с автоматическим затемнением для читаемости.
+*   **Умная навигация:** Кнопка призыва к действию плавно скроллит пользователя к блоку преимуществ.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Технологии
 
-## Expanding the ESLint configuration
+*   **React 18** — UI библиотека
+*   **Vite** — Сборщик и dev-сервер
+*   **CSS3** — Стилизация (Grid, Flexbox, Backdrop-filter)
+*   **JavaScript (ES6+)** — Логика взаимодействия
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Структура проекта
+
+```text
+my-react-app/
+├── public/             # Статические ассеты
+├── src/
+│   ├── assets/         # Иконки и изображения
+│   ├── App.jsx         # Главный компонент приложения
+│   ├── App.css         # Глобальные стили и секции
+│   └── main.jsx        # Точка входа React
+├── index.html          # HTML шаблон
+└── package.json        # Зависимости и скрипты
