@@ -2,7 +2,7 @@
 
 Современный, адаптивный лендинг для привлечения партнеров в сервис доставки. Создан с использованием **React** и **Vite** для максимальной производительности и плавного UX.
 
-![Preview](https://img.shields.io/badge/Status-Live-brightgreen) ![React](https://img.shields.io/badge/React-18.x-blue) ![Vite](https://img.shields.io/badge/Vite-5.x-purple)
+![React](https://img.shields.io/badge/React-19.x-blue) ![Vite](https://img.shields.io/badge/Vite-5.x-purple)
 
 ## Особенности проекта
 
